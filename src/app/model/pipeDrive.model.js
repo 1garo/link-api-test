@@ -19,7 +19,8 @@ class PipeDriveModel {
       return  data.map(
         ({
           // eslint-disable-next-line camelcase
-          add_time, value, }) => ({
+          id, add_time, value, }) => ({
+            id,
             value,
             bling_send: false,
             date: add_time.split(" ")[0]
