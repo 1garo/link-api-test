@@ -40,7 +40,7 @@ class ConnectBling {
     if (result.retorno && !result.retorno.erros) {
       return result.retorno;
     }
-    throw new Error(result.retorno.erros[0].erro.msg);
+    return result.retorno.erros[0].erro.msg;
   }
 }
 
