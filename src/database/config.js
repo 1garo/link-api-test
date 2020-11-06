@@ -1,3 +1,3 @@
 module.exports = {
-  uri: "mongodb://localhost:27017/db_deeper"
+  uri: "mongodb+srv://link_api_test:linkapi@cluster0.iflzo.mongodb.net/link_db?retryWrites=true&w=majority"
 };
