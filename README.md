@@ -9,7 +9,7 @@
   * [mongodb Atlas](https://www.mongodb.com/cloud/atlas)
 
 ## API Usage
-**create .env file with your following info:**
+**create .env file with the following information:**
 
 ```python
 PIPEDRIVE_BASE_URL=https://api.pipedrive.com/v1
@@ -19,7 +19,7 @@ BLING_URL=https://bling.com.br/Api/v2
 BLING_KEY=<your-bling-key>
 ```
 
-**replace the uri on the src/app/database/config.js**
+**replace the uri content on src/app/database/config.js**
 
 ```python
 module.exports = {
