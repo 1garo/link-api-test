@@ -21,6 +21,7 @@ class BlingController {
   async index(_, res) {
     try {
       const newDeal = await pipeDriveModel.searchAllDeal(0);
+      
       if (newDeal) { 
         try{
           await Bling.bulkWrite(newDeal.map((element) => ({
@@ -39,6 +40,14 @@ class BlingController {
       }
     } catch (error) {
       return res.json({data: error});
+    }
+  }
+  async query_db(_, res) {
+    try {
+      const orders = await Bling.find({}).select("-_id");
+      return res.json({pedidos: orders});
+    } catch (error) {
+      return res.json({erro: "Não foi possível consultar o banco, tente novamente!"});
     }
   }
 }
