@@ -19,6 +19,10 @@ BLING_URL=https://bling.com.br/Api/v2
 BLING_KEY=<your-bling-key>
 ```
 
+```
+yarn dev # start the server
+```
+
 **replace the uri content on src/app/database/config.js**
 
 ```python
@@ -32,6 +36,10 @@ module.exports = {
 ```
 200: Success
 50x: Server Error
+```
+### URI
+```
+http://localhost:3001/ # the endpoints you can see below
 ```
 
 ## Bling
