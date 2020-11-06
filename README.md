@@ -48,7 +48,7 @@ Content-Length: xy
 **Successful Response:**
 ```json
 HTTP/1.1 200 OK
-Server: My RESTful API
+Server: Link RESTFUL API
 Content-Type: application/json
 Content-Length: xy
 
@@ -66,8 +66,8 @@ Content-Length: xy
 
 **Fail Response:**
 ```json
-HTTP/1.1 404 or 500
-Server: My RESTful API
+HTTP/1.1 
+Server: Link RESTFUL API
 Content-Type: application/json
 Content-Length: xy
 
@@ -88,7 +88,7 @@ Content-Length: xy
 **Successful Response:**
 ```json
 HTTP/1.1 200 OK
-Server: My RESTful API
+Server: Link RESTFUL API
 Content-Type: application/json
 Content-Length: xy
 
@@ -99,8 +99,8 @@ Content-Length: xy
 
 **Fail Response:**
 ```json
-HTTP/1.1 404 or 500
-Server: My RESTful API
+HTTP/1.1
+Server: Link RESTFUL API
 Content-Type: application/json
 Content-Length: xy
 
