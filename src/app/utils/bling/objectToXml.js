@@ -15,12 +15,12 @@ class sasd {
       for await (const obj of this.data) {
         const {
           // eslint-disable-next-line camelcase
-          official_document, title, value, won_time,
+          official_document, name, value, won_time, 
         } = obj;
         const xmlobj = {
           pedido: {
             cliente: {
-              nome: title,
+              nome: name,
               tipoPessoa: 'J',
               endereco: 'Rua Visconde de São Gabriel',
               cpf_cnpj: official_document,
@@ -35,7 +35,7 @@ class sasd {
               email: 'teste@teste.com.br',
             },
             transporte: {
-              transportadora: 'Transportadora XYZ',
+              transportadora: 'TRANSPORTADORA XYZ',
               tipo_frete: 'R',
               servico_correios: 'SEDEX - CONTRATO',
               dados_etiqueta: {
