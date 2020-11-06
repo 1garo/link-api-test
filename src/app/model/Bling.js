@@ -4,6 +4,10 @@ require('mongoose-double')(mongoose);
 const SchemaTypes = mongoose.Schema.Types;
 const BlingSchema = new mongoose.Schema(
   {
+    id: {
+      type: Number,
+      required: true
+    },
     date: {
       type: String,
       required: true
@@ -16,10 +20,7 @@ const BlingSchema = new mongoose.Schema(
       type: Boolean,
       required: true
     }
-  },
-  {
-    timestamps: true
   }
 );
 
-module.exports = mongoose.model("Bling", BlingSchema);
+module.exports = mongoose.model("Bling", BlingSchema, "bling");
