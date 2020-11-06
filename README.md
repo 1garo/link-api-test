@@ -85,6 +85,46 @@ Content-Length: xy
 ```
 
 **Request:**
+**Query DB**
+```json
+GET /query_db HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Content-Length: xy
+```
+
+**Successful Response:**
+```json
+HTTP/1.1 200 OK
+Server: Link RESTFUL API
+Content-Type: application/json
+Content-Length: xy
+
+{
+    "pedidos": [
+    {
+      "id": 1,
+      "value": 2600,
+      "bling_send": true,
+      "date": "2020-11-04"
+    },
+  ]
+}
+```
+
+**Fail Response:**
+```json
+HTTP/1.1 
+Server: Link RESTFUL API
+Content-Type: application/json
+Content-Length: xy
+
+{
+    "erro": "Não foi possível consultar o banco, tente novamente!"
+}
+```
+
+**Request:**
 **Create deals as orders on Bling**
 ```json
 POST /bling HTTP/1.1
